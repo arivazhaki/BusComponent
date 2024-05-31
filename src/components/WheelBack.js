@@ -10,6 +10,7 @@ const WheelBack = () => {
 		Left: '23%',
 		right: '60%',
 		top: '160px',
+		border: 'grey',
 		position: 'absolute',
 		margin: '25% auto',
 	};

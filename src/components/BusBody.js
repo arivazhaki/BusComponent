@@ -8,6 +8,7 @@ const BusBody = () => {
 		backgroundColor: 'blue',
 		position: 'relative',
 		border: '2px solid black',
+		borderTopRightRadius: '10%',
 		margin: '25% auto',
 		padding: '0%',
 	};

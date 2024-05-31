@@ -1,23 +1,11 @@
 import { React } from 'react';
+import Window from './Window';
 
-const WindowSecond = () => {
-	const buswindow = {
-		width: '7vw',
-		height: '10vw',
-		backgroundColor: '#e0e0e0',
-		border: '10px solid #000',
-		position: 'absolute',
-		overflow: 'hidden',
-		borderRadius: '10px',
-		boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
-		top: '80px',
-		left: '33%',
-		margin: '10% auto',
-	};
+const WindowSecond = (context) => {
+	const { config: { windowPosition }} = context;
 
-	return (
-		<div style={ buswindow }/>
-	);
+	return	windowPosition.map((param, key) =>
+		<Window key={ key }{ ...{ ...context, data: { ...param }} }/>);
 };
 
 export default WindowSecond;

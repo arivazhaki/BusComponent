@@ -10,6 +10,7 @@ const WheelFront = () => {
 		Right: '25%',
 		left: '57%',
 		top: '160px',
+		border: 'grey',
 		position: 'absolute',
 		margin: '25% auto',
 	};
