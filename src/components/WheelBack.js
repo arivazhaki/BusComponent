@@ -1,23 +1,11 @@
-/* eslint-disable max-lines-per-function */
 import { React } from 'react';
+import WheelFront from './WheelFront';
 
-const WheelBack = () => {
-	const wheel = {
-		width: '12vw',
-		height: '12vW',
-		backgroundColor: 'black',
-		borderRadius: '50%',
-		Left: '23%',
-		right: '60%',
-		top: '160px',
-		border: 'grey',
-		position: 'absolute',
-		margin: '25% auto',
-	};
+const WheelBack = (context) => {
+	const { config: { wheelPosition }} = context;
 
-	return (
-		<div style={ wheel }/>
-	);
+	return wheelPosition.map((param, key) =>
+		<WheelFront key={ key }{ ...{ ...context, data: { ...param }} }/>);
 };
 
 export default WheelBack;

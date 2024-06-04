@@ -7,7 +7,7 @@ const Window = (context) => {
 		<div>
 			<div style={ {
 				width: '7vw',
-				height: '10vw',
+				height: '8vw',
 				backgroundColor: '#e0e0e0',
 				border: '10px solid #000',
 				position: 'absolute',
